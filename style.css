@@ -1,0 +1,143 @@
+* {
+    margin:0;
+    padding:0;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  img
+  {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .curtain {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .curtain:hover {
+    transform: translateY(-5%);
+    transition: transform 0.2s ease;
+  }
+  
+  .curtain.active {
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+  }
+  
+  .lamp
+  {
+    position: absolute;
+    left: 50%;
+    top:100px;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+  }
+  
+  .lampObjects
+  {
+    position: absolute;
+    top: 85px;
+    left: 130px;
+  }
+  
+  .object1
+  {
+    position: relative;
+    background-color: #969797;
+    width: 2px;
+    height: 50px;
+  }
+  
+  
+  
+  .light
+  {
+    position: absolute;
+    top: 136px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 400px solid transparent;
+    border-right: 400px solid transparent;
+    border-bottom: 520px solid rgb(255,255,0,0.5);
+    width: 85px;
+    border-top: 50px solid transparent;
+    background-color: rgba(0,0,255,0);
+    pointer-events: none;
+  }
+  
+  .hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  
+  .wizard
+  {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-95%);
+    width: 300px;
+    height: 300px;
+  }
+  
+  .hat
+  {
+    position: absolute;
+    top: 550px;
+    left: 57%;
+    width: 150px;
+    height: 150px;
+      
+  }
+  
+  .bird
+  {
+    position: absolute;
+    top: 400px;
+    left: 48%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .rabbit
+  {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+  }
+ 
+.inside {
+    transform: translate(70%, 50px);
+    visibility: visible
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.outside {
+    transform: translate(70%, 0px);
+    visibility: hidden
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+ 
